@@ -16,4 +16,16 @@ Route::get('/', function () {
 });
 
 Route::resource('inicio', 'InicioController'); //para utilizar todas las rutas
-	Auth::routes();
+Auth::routes();
+
+Route::resource('Categorias', 'CategoriaController'); //para utilizar todas las rutas
+Auth::routes();
+
+Route::resource('Inventario', 'InventarioController'); //para utilizar todas las rutas
+Auth::routes();
+
+Route::resource('Medidas', 'MedidasController'); //para utilizar todas las rutas
+Auth::routes();
+
+Route::resource('Productos', 'ProductosController'); //para utilizar todas las rutas
+Auth::routes();
